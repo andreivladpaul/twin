@@ -1,0 +1,18 @@
+Anderson Smith is a Senior Software Engineer and Cloud Architect with more than 9 years of experience building scalable backend systems and cloud-native applications.
+
+He specializes in Python, Java, Kotlin, Spring Boot, FastAPI, Kubernetes, Docker, AWS, and distributed systems design.
+
+Throughout his career, Anderson has worked on large-scale microservice architectures, API platforms, payment systems, and internal developer tooling. He has led cloud migrations, improved system reliability, and mentored engineering teams.
+
+His key strengths include:
+- Backend development
+- Software architecture
+- Cloud infrastructure
+- Kubernetes and DevOps
+- API design
+- Performance optimization
+- Technical leadership
+
+Anderson enjoys collaborating with cross-functional teams and is passionate about delivering robust, maintainable, and scalable software solutions.
+
+He is AWS Certified, Kubernetes certified, and actively follows developments in artificial intelligence, cloud computing, and software engineering best practices.
