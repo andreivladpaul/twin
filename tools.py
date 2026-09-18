@@ -1,7 +1,4 @@
 from agents import function_tool
-from dotenv import load_dotenv
-
-load_dotenv(override=True)
 
 @function_tool
 def record_user_details(

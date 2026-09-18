@@ -1,16 +1,13 @@
 import os
 
-from dotenv import load_dotenv
 from agents import Agent
 from agents import AsyncOpenAI, OpenAIChatCompletionsModel
 
 from context import TWIN_SYSTEM_PROMPT
 from tools import record_user_details
 
-load_dotenv(override=True)
-
 openrouter_client = AsyncOpenAI(
-    api_key=os.environ["OPENAI_API_KEY"],
+    api_key=os.environ["OPENROUTER_API_KEY"],
     base_url="https://openrouter.ai/api/v1",
 )
 

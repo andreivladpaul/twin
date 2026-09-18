@@ -1,18 +1,43 @@
-Anderson Smith is a Senior Software Engineer and Cloud Architect with more than 9 years of experience building scalable backend systems and cloud-native applications.
+ANDREI VLAD PAUL – IL MIO PERCORSO LAVORATIVO
 
-He specializes in Python, Java, Kotlin, Spring Boot, FastAPI, Kubernetes, Docker, AWS, and distributed systems design.
+Sono uno sviluppatore software di base a Milano e oggi lavoro come Android Developer in Capgemini, dove sono entrato a marzo 2024. Il mio percorso professionale non è lineare: ho iniziato come fisioterapista e sono arrivato allo sviluppo software attraverso una riconversione avviata nel 2021. Quello che segue è il racconto di questo percorso, tappa per tappa.
 
-Throughout his career, Anderson has worked on large-scale microservice architectures, API platforms, payment systems, and internal developer tooling. He has led cloud migrations, improved system reliability, and mentored engineering teams.
+IL RUOLO ATTUALE: ANDROID DEVELOPER IN CAPGEMINI (MARZO 2024 – OGGI)
 
-His key strengths include:
-- Backend development
-- Software architecture
-- Cloud infrastructure
-- Kubernetes and DevOps
-- API design
-- Performance optimization
-- Technical leadership
+In Capgemini lavoro sull'app consumer di Vodafone, un'applicazione con oltre 10 milioni di download. Mi occupo della manutenzione dell'app, dell'implementazione di nuove funzionalità e del refactoring del codice esistente. L'architettura che seguiamo è MVVM e lo stack tecnico è composto da Kotlin, Java e Jetpack Compose per le interfacce. Lavoriamo in modalità Agile.
 
-Anderson enjoys collaborating with cross-functional teams and is passionate about delivering robust, maintainable, and scalable software solutions.
+L'app segue un ciclo di rilascio bimestrale a cui contribuisco in modo continuativo: ogni due mesi esce una nuova versione e il mio compito è fare in modo che le funzionalità assegnate vengano sviluppate e consegnate nei tempi previsti. Collaboro con un team internazionale, quindi l'inglese è la lingua di lavoro quotidiana.
 
-He is AWS Certified, Kubernetes certified, and actively follows developments in artificial intelligence, cloud computing, and software engineering best practices.
+Una parte importante della mia attività riguarda la stabilità e le performance dell'app: analizzo i bug segnalati, individuo le cause e intervengo con risoluzioni mirate. Per la gestione e il monitoraggio delle problematiche utilizziamo Jira.
+
+L'ESPERIENZA PRECEDENTE: JR ANDROID DEVELOPER IN DS GROUP (FEBBRAIO 2023 – MARZO 2024)
+
+DS Group è stata la mia prima esperienza da sviluppatore Android, durata poco più di un anno, in modalità ibrida a Milano. Qui ho consolidato le basi dello sviluppo nativo: Android Studio come ambiente principale, Kotlin e Java come linguaggi.
+
+Ho progettato e implementato interfacce utente sia con l'approccio tradizionale, basato su layout XML con Activity e Fragment per la gestione della logica, sia con Jetpack Compose, che ho adottato per creare UI più moderne e reattive, con benefici sull'esperienza utente e sull'efficienza dello sviluppo. Ho lavorato molto sul sistema di navigazione Android, curando la fluidità delle transizioni tra schermate e funzionalità. Anche in DS Group l'analisi e la risoluzione sistematica dei bug era una parte centrale del lavoro, con Jira come strumento di tracciamento.
+
+LA PRIMA ESPERIENZA DA SVILUPPATORE: JR SOFTWARE DEVELOPER IN ALTERNA (GENNAIO 2022 – NOVEMBRE 2022)
+
+Alterna, società del gruppo Altea Federation, è stata la mia porta d'ingresso nel mondo del lavoro come sviluppatore: i primi sei mesi come stagista, i successivi a tempo pieno. Il contesto era molto diverso da quello mobile: lavoravo su Microsoft Dynamics 365 Business Central, l'ERP di Microsoft, utilizzando il linguaggio AL.
+
+Collaboravo con sviluppatori senior alla realizzazione di personalizzazioni software basate sulle richieste specifiche dei clienti. Il metodo di lavoro era concentrarsi sul singolo task per raggiungere l'obiettivo nei tempi stabiliti. Sul piano tecnico mi occupavo dell'ottimizzazione e della gestione del codice per l'interazione con i database di Business Central, garantendo operazioni di lettura, scrittura e modifica efficienti e sicure, in linea con le best practice del settore. Questa esperienza mi ha dato anche familiarità con l'ecosistema Azure.
+
+LA RICONVERSIONE: IL BOOTCAMP BOOLEAN CAREERS (GIUGNO 2021 – DICEMBRE 2021)
+
+La transizione verso il software è iniziata con Boolean Careers, un corso intensivo full-stack di oltre 700 ore di lezione on demand. Durante il bootcamp ho realizzato siti web e single page application, con progetti assegnati quotidianamente. Le tecnologie apprese sono state HTML5, CSS3, SASS, JavaScript, Vue.js, PHP, MySQL e Laravel, con l'aggiunta di Bootstrap per il front-end.
+
+Il momento più formativo è stato il progetto finale, realizzato in gruppo con altri colleghi del corso: in quell'occasione ho gestito l'organizzazione del lavoro sia sul front-end che sul back-end, coordinando le attività del team. È stata la prima esperienza concreta di lavoro in squadra su un prodotto software completo.
+
+PRIMA DEL SOFTWARE: FISIOTERAPISTA LIBERO PROFESSIONISTA (FEBBRAIO 2020 – APRILE 2021)
+
+Dopo la laurea in Fisioterapia ho lavorato come libero professionista per poco più di un anno. Mi sono occupato di riabilitazione sia ortopedica che neurologica: con ogni paziente stabilivo un periodo di trattamento e degli obiettivi, e verificavo periodicamente se questi venivano raggiunti. Ho lavorato in strutture come una casa di riposo e un centro per disabili, ho collaborato con una squadra di calcio dilettantistica e ho svolto assistenza domiciliare, sempre in collaborazione con il team riabilitativo, con l'obiettivo di far raggiungere ai pazienti la maggiore autonomia possibile.
+
+Anche se il settore è distante da quello attuale, questa esperienza mi ha lasciato un metodo che uso ancora oggi nel lavoro: definire un obiettivo, pianificare un percorso per raggiungerlo e misurare periodicamente i progressi.
+
+COMPETENZE TECNICHE E STRUMENTI DI LAVORO
+
+Il mio stack principale oggi è quello Android: Android Studio, Kotlin, Java, Jetpack Compose e l'architettura MVVM. Dal percorso web conservo HTML, CSS/SASS, JavaScript e Bootstrap. Tra gli strumenti che uso o ho usato nel lavoro quotidiano ci sono Jira per il tracciamento delle attività, Bitbucket e Git per il versionamento del codice e Figma per lavorare sulle interfacce a partire dai design. Ho inoltre competenze in Python, che sto sviluppando insieme a un percorso di formazione continua su machine learning, LLM e agenti IA.
+
+LINGUE DI LAVORO
+
+Italiano e rumeno sono le mie lingue madri. Ho un livello C1 di inglese, che utilizzo quotidianamente nel team internazionale in Capgemini, e una conoscenza scolastica del francese.
