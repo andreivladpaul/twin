@@ -1,33 +1,33 @@
 # Digital Twin
 
-Un assistente conversazionale basato sull'intelligenza artificiale che rappresenta il profilo professionale di Andrei Vlad Paul. Il progetto permette a visitatori, recruiter e potenziali collaboratori di fare domande su esperienza, competenze, progetti e percorso professionale attraverso un'interfaccia web semplice e accessibile.
+An AI-powered conversational assistant that represents the professional profile of Andrei Vlad Paul. The project lets visitors, recruiters, and potential collaborators ask questions about his experience, skills, projects, and career path through a simple, accessible web interface.
 
-Il Digital Twin non si presenta come la persona reale: dichiara di essere un sistema AI e risponde utilizzando esclusivamente le informazioni professionali fornite come contesto.
+The Digital Twin does not pose as the real person: it states that it is an AI system and answers exclusively on the basis of the professional information provided as context.
 
-## Funzionalita
+## Features
 
-- Chat conversazionale con cronologia della sessione.
-- Risposte basate su curriculum, profilo LinkedIn e sintesi del percorso professionale.
-- Gestione delle domande fuori contesto e delle informazioni non disponibili.
-- Registrazione delle richieste di contatto tramite email e note.
-- Limite di 20 messaggi per sessione e controllo anti-spam.
-- Comunicazione con un modello OpenRouter tramite endpoint compatibile con OpenAI.
-- Interfaccia web pronta per il deploy su Streamlit Cloud.
+- Conversational chat with session history.
+- Answers grounded in the CV, LinkedIn profile, and a career summary.
+- Handling of off-topic questions and unavailable information.
+- Logging of contact requests via email and notes.
+- 20-message limit per session and anti-spam control.
+- Communication with an OpenRouter model through an OpenAI-compatible endpoint.
+- Web interface ready to deploy on Streamlit Cloud.
 
-## Stack tecnologico
+## Tech stack
 
-- **Python**: linguaggio principale.
-- **Streamlit**: interfaccia web e gestione della sessione utente.
-- **OpenAI Agents SDK**: definizione dell'agente, esecuzione dei turni e function tool.
-- **OpenRouter**: accesso al modello linguistico tramite API compatibile con OpenAI.
-- **python-dotenv**: caricamento delle variabili d'ambiente in locale.
-- **pypdf**: estrazione del testo dal PDF del profilo LinkedIn.
-- **AsyncOpenAI**: client asincrono configurato con l'endpoint OpenRouter.
+- **Python**: main language.
+- **Streamlit**: web interface and user session management.
+- **OpenAI Agents SDK**: agent definition, turn execution, and function tools.
+- **OpenRouter**: access to the language model through an OpenAI-compatible API.
+- **python-dotenv**: loading of environment variables in local development.
+- **pypdf**: text extraction from the LinkedIn profile PDF.
+- **AsyncOpenAI**: asynchronous client configured with the OpenRouter endpoint.
 
-## Architettura
+## Architecture
 
 ```text
-Visitatore
+Visitor
 	 |
 	 v
 Streamlit (app.py)
@@ -39,66 +39,65 @@ Agent SDK (agent.py)
 	 |
 	 +----> OpenRouter API
 
-Contesto dell'agente:
+Agent context:
 	 - summary.txt
 	 - linkedin.pdf
 ```
 
-I file `summary.txt` e `linkedin.pdf` vengono letti da `context.py` e trasformati nelle istruzioni dell'agente. Quando un utente lascia i propri dati per essere ricontattato, `tools.py` aggiunge le informazioni a `user_details.txt`.
+The files `summary.txt` and `linkedin.pdf` are read by `context.py` and turned into the agent's instructions. When a user leaves their details to be contacted, `tools.py` appends the information to `user_details.txt`.
 
-## Struttura del progetto
+## Project structure
 
-| File | Responsabilita |
+| File | Responsibility |
 | --- | --- |
-| `app.py` | Avvia l'interfaccia Streamlit, carica i secret e gestisce la chat. |
-| `agent.py` | Configura il Digital Twin e il client OpenRouter. |
-| `context.py` | Costruisce il prompt usando il PDF e la sintesi professionale. |
-| `tools.py` | Contiene il tool per registrare richieste di contatto. |
-| `summary.txt` | Sintesi del percorso professionale e delle competenze. |
-| `linkedin.pdf` | Fonte aggiuntiva di informazioni professionali. |
-| `requirements.txt` | Dipendenze Python del progetto. |
-| `app_gradio_backup.py` | Versione precedente dell'interfaccia, conservata come backup. |
+| `app.py` | Launches the Streamlit interface, loads the secrets, and manages the chat. |
+| `agent.py` | Configures the Digital Twin and the OpenRouter client. |
+| `context.py` | Builds the prompt from the PDF and the professional summary. |
+| `tools.py` | Contains the tool for logging contact requests. |
+| `summary.txt` | Summary of the career path and skills. |
+| `linkedin.pdf` | Additional source of professional information. |
+| `requirements.txt` | Python dependencies of the project. |
+| `app_gradio_backup.py` | Previous version of the interface, kept as a backup. |
 
+## Running locally
 
-## Avvio locale
+1. Clone the repository and move into the project directory:
 
-1. Clona la repository e spostati nella directory del progetto:
-
-	```bash
+```bash
 	git clone https://github.com/andreivladpaul/twin.git
 	cd twin
-	```
+```
 
-2. Crea e attiva un ambiente virtuale:
+2. Create and activate a virtual environment:
 
-	```bash
+```bash
 	python -m venv .venv
 	source .venv/bin/activate
-	```
+```
 
-	Su Windows, attiva l'ambiente con `.venv\\Scripts\\activate`.
+	On Windows, activate the environment with `.venv\\Scripts\\activate`.
 
-3. Installa le dipendenze:
+3. Install the dependencies:
 
-	```bash
+```bash
 	pip install -r requirements.txt
-	```
+```
 
-4. Crea un file `.env` nella root del progetto:
+4. Create a `.env` file in the project root:
 
-	```env
-	OPENROUTER_API_KEY=la_tua_chiave_openrouter
+```env
+	OPENROUTER_API_KEY=your_openrouter_key
 	OPENROUTER_MODEL=openai/gpt-4o-mini
-	```
+```
 
-	`OPENROUTER_API_KEY` e il nome della variabile richiesto dall'applicazione. Il valore deve essere una chiave OpenRouter, non una chiave OpenAI. `OPENROUTER_MODEL` e opzionale.
+	`OPENROUTER_API_KEY` is the variable name required by the application. The value must be an OpenRouter key, not an OpenAI key. `OPENROUTER_MODEL` is optional.
 
-5. Avvia l'applicazione:
+5. Start the application:
 
-	```bash
+```bash
 	streamlit run app.py
-	```
+```
 
-## Licenza
+## License
 
-Il progetto e destinato a uso personale e dimostrativo. Per informazioni su riutilizzo, distribuzione o collaborazione, contatta l'autore della repository.
+The project is intended for personal and demonstration use. For information on reuse, distribution, or collaboration, contact the repository author.
