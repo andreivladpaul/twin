@@ -1,3 +1,5 @@
 .env
 __pycache__/
 user_details.txt
+linkedin.pdf
+summary.txt
