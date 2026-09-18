@@ -15,12 +15,10 @@ MIN_SECONDS_BETWEEN = 2      # anti-spam fra due invii
 # --- Secrets ----------------------------------------------------------------
 
 # IMPORTANTE: questo blocco deve stare PRIMA di importare agent.py.
-# agent.py fa os.environ["OPENAI_API_KEY"] al momento dell'import:
+# agent.py fa os.environ["OPENROUTER_API_KEY"] al momento dell'import:
 # se la chiave non c'e' ancora, solleva KeyError e l'app muore
 # prima di poter mostrare qualsiasi messaggio d'errore leggibile.
 #
-# Nota: la chiave si chiama OPENAI_API_KEY ma punta a OpenRouter
-# (vedi base_url in agent.py). Il nome e' fuorviante, il valore no.
 load_dotenv(override=True)
 
 try:
@@ -39,7 +37,7 @@ st.caption("Talk to my AI twin")
 
 if not os.getenv("OPENROUTER_API_KEY"):
     st.error(
-        "Manca OPENAI_API_KEY (la chiave OpenRouter). In locale mettila nel "
+        "Manca OPENROUTER_API_KEY. In locale mettila nel "
         "file .env, su Streamlit Cloud in Settings → Secrets."
     )
     st.stop()
