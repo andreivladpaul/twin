@@ -24,7 +24,7 @@ MIN_SECONDS_BETWEEN = 2      # anti-spam fra due invii
 load_dotenv(override=True)
 
 try:
-    for _key in ("OPENAI_API_KEY", "OPENROUTER_MODEL"):
+    for _key in ("OPENROUTER_API_KEY", "OPENROUTER_MODEL"):
         if _key in st.secrets and not os.getenv(_key):
             os.environ[_key] = str(st.secrets[_key])
 except Exception:
@@ -37,7 +37,7 @@ st.set_page_config(page_title="Digital Twin", page_icon="💬")
 st.title("Digital Twin")
 st.caption("Talk to my AI twin")
 
-if not os.getenv("OPENAI_API_KEY"):
+if not os.getenv("OPENROUTER_API_KEY"):
     st.error(
         "Manca OPENAI_API_KEY (la chiave OpenRouter). In locale mettila nel "
         "file .env, su Streamlit Cloud in Settings → Secrets."
